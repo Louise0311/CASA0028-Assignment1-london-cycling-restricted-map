@@ -10,7 +10,7 @@ function App() {
 
   useEffect(() => {
     // Fetching the local GeoJSON data from public folder [cite: 589, 1317]
-    fetch('/restricted_point.json')
+    fetch('./restricted_point.json')
       .then((res) => res.json())
       .then((data) => {
         console.log("Data loaded successfully:", data.features); 
